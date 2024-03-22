@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.book-card img.book-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-card .book-details {
+  padding: 10px;
+}
+
+.book-card .book-title {
+  margin: 0;
+}
+
+.book-card .book-price {
+  margin: 0;
+  font-weight: bold;
+}
+
+.book-card .book-tags {
+  margin: 0;
+}
+
+.book-card .buy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}

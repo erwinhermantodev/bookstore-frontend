@@ -1,0 +1,88 @@
+/* App container */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Book list container */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Center the book list horizontally */
+}
+
+/* Book card */
+.book-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.book-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+/* Book image */
+.book-card img.book-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Book details */
+.book-card .book-details {
+  padding: 15px;
+}
+
+/* Book title */
+.book-card .book-title {
+  margin: 0;
+  font-size: 1.2rem; /* Increase font size for title */
+  font-weight: bold;
+}
+
+/* Book writer */
+.book-card .book-writer {
+  margin: 5px 0;
+  color: #666; /* Dim the color */
+}
+
+/* Book price */
+.book-card .book-price {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Book tags */
+.book-card .book-tags {
+  margin: 5px 0;
+  font-size: 0.9rem; /* Decrease font size for tags */
+  color: #888; /* Dim the color */
+}
+
+/* Buy button */
+.book-card .buy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add smooth transition for button color */
+}
+
+.book-card .buy-button:hover {
+  background-color: #0056b3; /* Darken the button color on hover */
+}
+
+/* Loading indicator */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
